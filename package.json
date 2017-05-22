@@ -1,5 +1,5 @@
 {
-  "name": "library-boilerplate",
+  "name": "library-starter",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/erendabanlioglu/library-boilerplate.git"
+    "url": "git+https://github.com/erendabanlioglu/library-starter.git"
   },
   "author": "Eren Dabanlioglu",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/erendabanlioglu/library-boilerplate/issues"
+    "url": "https://github.com/erendabanlioglu/library-starter/issues"
   },
-  "homepage": "https://github.com/erendabanlioglu/library-boilerplate#readme",
+  "homepage": "https://github.com/erendabanlioglu/library-starter#readme",
   "devDependencies": {
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",

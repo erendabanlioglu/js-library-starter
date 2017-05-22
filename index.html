@@ -9,12 +9,20 @@
 
     </div>
 
+    <div id="test2">
+
+    </div>
+
   </body>
-  <script src="file:///W:/TVT/library-boilerplate/dist/main.js"></script>
+  <script src="file:///W:/TVT/library-starter/dist/main.js"></script>
 
   <script>
-    var cir = new shapesLib.Circle();
+    var cir = new shapesLib.Circle(50);
     cir.render();
     cir.print('test');
+
+    var rec = new shapesLib.Rectangle(100,100);
+    rec.render();
+    rec.print('test2');
   </script>
 </html>

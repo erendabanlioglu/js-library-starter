@@ -14,4 +14,7 @@ export class Shape{
     let element = document.getElementById(id);
     element && element.appendChild(this.svg);
   }
+
+  get area(){}
+  get circumference(){}
 }

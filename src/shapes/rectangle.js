@@ -2,12 +2,11 @@
 import {Shape} from './shape.js';
 import * as d3 from "d3";
 
-export class Circle extends Shape{
-  constructor (radius) {
+export class Rectangle extends Shape{
+  constructor (width, height) {
     super();
-    this.radius = radius ? radius : 40;
-    this.width = this.radius*2+10;
-    this.height = this.radius*2+10;
+    if(width) this.width = width;
+    if(height) this.height = height;
   }
   render(){
     var svg =  d3.select(document.createElementNS('http://www.w3.org/2000/svg', 'svg'));
@@ -15,12 +14,11 @@ export class Circle extends Shape{
     svg.attr("width", this.width)
     .attr("height", this.height);
 
-    svg.append("circle")
+    svg.append("rect")
       .style("stroke", "gray")
       .style("fill", "white")
-      .attr("r", this.radius)
-      .attr("cx", this.width/2)
-      .attr("cy", this.height/2);
+      .attr("width", this.width)
+      .attr("height", this.height);
 
     this.svg = svg.node();
     return this.svg;
@@ -29,9 +27,9 @@ export class Circle extends Shape{
   resize(){}
   
   get area(){
-    return Math.PI*this.radius**2;
+    return this.width*this.height;
   }
   get circumference(){
-    return 2*this.radius*Math.PI;
+    return (this.width+this.height)*2;
   }
 }
