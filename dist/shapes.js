@@ -2,11 +2,11 @@
 	if(typeof exports === 'object' && typeof module === 'object')
 		module.exports = factory();
 	else if(typeof define === 'function' && define.amd)
-		define("shapesLib", [], factory);
+		define("shapes", [], factory);
 	else if(typeof exports === 'object')
-		exports["shapesLib"] = factory();
+		exports["shapes"] = factory();
 	else
-		root["shapesLib"] = factory();
+		root["shapes"] = factory();
 })(this, function() {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -17186,4 +17186,4 @@ Object.keys(_rectangle).forEach(function (key) {
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=main.js.map
+//# sourceMappingURL=shapes.js.map

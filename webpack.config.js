@@ -1,15 +1,17 @@
 "use strict";
 
-const webpack = require('webpack'),
-      config = require('./package.json'),
-      path = require('path');
+const WEBPACK = require('webpack'),
+      CONFIG = require('./package.json'),
+      PATH = require('path');
 
 require('dotenv').config();
-const PROD = process.env.NODE_ENV === 'production';
+const NAME = process.env.NAME,
+      TARGET = process.env.TARGET,
+      PROD = process.env.NODE_ENV === 'production';
 
 var plugins = [];
 if(PROD){
-  plugins.push(new webpack.optimize.UglifyJsPlugin({
+  plugins.push(new WEBPACK.optimize.UglifyJsPlugin({
     compress: { warnings: false }
   }));
 }
@@ -19,10 +21,10 @@ var libconfig = {
   devtool: 'source-map',
   output: {
     path: __dirname + '/dist',
-    filename: (PROD) ? '[name].min.js' : '[name].js',
-    library: process.env.NAME,
-    libraryTarget: process.env.TARGET,
-    umdNamedDefine: process.env.TARGET === 'umd'
+    filename: (PROD) ? NAME+'.min.js' : NAME+'.js',
+    library: NAME,
+    libraryTarget: TARGET,
+    umdNamedDefine: TARGET === 'umd'
   },
   module: {
     rules: [
