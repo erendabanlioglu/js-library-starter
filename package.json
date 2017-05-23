@@ -1,8 +1,8 @@
 {
-  "name": "library-starter",
+  "name": "shapes",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/shapes.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:dev": "SET NODE_ENV=development && webpack",

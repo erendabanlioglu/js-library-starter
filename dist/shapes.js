@@ -17062,6 +17062,7 @@ var Circle = exports.Circle = function (_Shape) {
   }, {
     key: "area",
     get: function get() {
+      //1px = 0.02645833 cm if you need as cm
       return Math.PI * Math.pow(this.radius, 2);
     }
   }, {

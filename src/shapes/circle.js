@@ -27,8 +27,9 @@ export class Circle extends Shape{
   }
   update(){}
   resize(){}
-  
+
   get area(){
+    //1px = 0.02645833 cm if you need as cm
     return Math.PI*this.radius**2;
   }
   get circumference(){
