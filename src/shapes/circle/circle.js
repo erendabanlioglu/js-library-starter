@@ -1,5 +1,5 @@
 "use strict";
-import {Shape} from './shape.js';
+import {Shape} from '../shape.js';
 import * as d3 from "d3";
 
 export class Circle extends Shape{
@@ -22,8 +22,8 @@ export class Circle extends Shape{
       .attr("cx", this.width/2)
       .attr("cy", this.height/2);
 
-    this.svg = svg.node();
-    return this.svg;
+    this.svg = svg;
+    return this.svg.node();
   }
   update(){}
   resize(){}

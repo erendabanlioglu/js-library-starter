@@ -1,5 +1,5 @@
 "use strict";
-import {Shape} from './shape.js';
+import {Shape} from '../shape.js';
 import * as d3 from "d3";
 
 export class Rectangle extends Shape{
@@ -20,12 +20,12 @@ export class Rectangle extends Shape{
       .attr("width", this.width)
       .attr("height", this.height);
 
-    this.svg = svg.node();
-    return this.svg;
+    this.svg = svg;
+    return this.svg.node();
   }
   update(){}
   resize(){}
-  
+
   get area(){
     return this.width*this.height;
   }

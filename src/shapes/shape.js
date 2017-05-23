@@ -5,7 +5,6 @@ export class Shape{
     this.svg = null;
     this.width = 200;
     this.height = 200;
-    console.log('shape init- ', this);
   }
   render(){}
   update(){}

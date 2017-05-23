@@ -4,7 +4,8 @@
   "description": "",
   "main": "dist/shapes.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha --compilers js:babel-core/register --colors ./src/shapes/**/*.test.js",
+    "test:watch": "mocha --compilers js:babel-core/register --colors -w ./src/shapes/**/*.test.js",
     "build:dev": "SET NODE_ENV=development && webpack",
     "build:prod": "webpack"
   },
@@ -23,8 +24,12 @@
     "babel-loader": "^7.0.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-es2016": "^6.24.1",
+    "chai": "^3.5.0",
     "d3": "^4.9.1",
     "dotenv": "^4.0.0",
+    "jsdom": "^11.0.0",
+    "jsdom-global": "^3.0.2",
+    "mocha": "^3.4.1",
     "webpack": "^2.5.1"
   }
 }
