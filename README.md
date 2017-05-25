@@ -5,9 +5,10 @@
 ```npm run test```        --> run unit tests  /shapes/**/*.test.js <br />
 ```npm run build:dev```   --> compile <br />
 ```npm run build:prod```  --> complie minified and uglified version <br />
+```npm run try``` ---> will run webpack-dev-server on localhost:8080 so you can use *index.html* to try out your changes.
 
-to remove d3, issue ```npm remove d3```
 
+```npm remove d3``` to remove d3 dependency.<br />
 
 
 Links
