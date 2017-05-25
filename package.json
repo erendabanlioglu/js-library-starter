@@ -1,13 +1,13 @@
 {
-  "name": "shapes",
-  "version": "1.0.0",
+  "name": "shapes-wow2",
+  "version": "1.0.1",
   "description": "",
   "main": "dist/shapes.js",
   "scripts": {
     "test": "mocha --compilers js:babel-core/register --colors ./src/shapes/**/*.test.js",
     "test:watch": "mocha --compilers js:babel-core/register --colors -w ./src/shapes/**/*.test.js",
-    "build:dev": "SET NODE_ENV=development && webpack",
-    "build:prod": "webpack"
+    "build:dev": "webpack",
+    "build:prod": "webpack -p"
   },
   "repository": {
     "type": "git",
