@@ -11,7 +11,7 @@ export class Shape{
   resize(){}
   print(id){
     let element = document.getElementById(id);
-    element && element.appendChild(this.svg);
+    element && element.appendChild(this.svg.node());
   }
 
   get area(){}

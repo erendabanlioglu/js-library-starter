@@ -26,10 +26,7 @@ var libconfig = {
       { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader",  query: {presets: ['es2015', 'es2016']} }
     ]
   },
-  plugins: plugins,
-  externals: {
-    'd3': 'd3'
-  }
+  plugins: plugins
 };
 
 module.exports = libconfig;
