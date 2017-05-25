@@ -1,5 +1,6 @@
 # library-starter
 
+```npm install```  install dependencies before start
 
 ```npm run test```        --> run unit tests  /shapes/**/*.test.js <br />
 ```npm run build:dev```   --> compile <br />
