@@ -1,5 +1,7 @@
 # library-starter
 
+Webpack ES2016 library starter pack.
+
 ```npm install```  install dependencies before start
 
 ```npm run test```        --> run unit tests  /shapes/**/*.test.js <br />
